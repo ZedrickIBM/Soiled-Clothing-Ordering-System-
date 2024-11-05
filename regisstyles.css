@@ -1,0 +1,146 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f9;
+    color: #231f20;
+    line-height: 1.6;
+}
+        .divider {
+            background-color: #f4f4f9;
+            height: 30px; /* Adjust the height of the divider as needed */
+            margin-top: 20px;
+        }
+        .divider1 {
+            margin-top: 30px;
+            background-color:#231f20;
+            height: 10px;
+        }
+        .container1 {
+            display: flex;
+            align-items: center; /* Align items vertically */
+        }
+        .logo {
+            margin-top: 30px;
+            margin-left: 50px;
+            width: 15%;
+            height: auto;
+        }
+        .navbar {
+            margin-top: 30px;
+            margin-left: 80px; /* Add margin to create space between logo and list */
+        }
+        
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0; /* Remove default margin */
+            display: flex; /* Use flexbox for the list */
+        }
+        
+        .navbar li {
+            margin-right: 50px;
+        }
+        
+        .navbar li:last-child {
+            margin-right: 0; /* Remove margin from the last list item */
+        }
+        
+        .navbar li a,
+                .navbar li .login-button {
+                    text-decoration: none;
+                    color: #333;
+                    background: none; /* Remove any default button background */
+                    border: none; /* Remove any default button border */
+                    font: inherit; /* Inherit font styles */
+                    cursor: pointer; /* Make cursor a pointer */
+                    padding: 0; /* Remove default padding */
+                }
+        
+                .navbar li a:hover,
+                .navbar li .login-button:hover {
+                    color: #231f20;
+                    font-weight: 500; /* Make text bold on hover */
+                }
+        
+        .logos {
+            display: flex;
+            justify-content: flex-end; /* Align items to the right */
+            align-items: center; /* Align items vertically */
+            margin-left: 500px;
+        }
+
+
+
+        /* Basic styles for the container */
+        .container {
+            font-family: 'Montserrat', sans-serif; 
+            width: 370px;          /* Fixed width for the container */
+            margin: 80px auto;     /* Center the container vertically and horizontally */
+            padding: 5px;         /* Padding inside the container */
+            text-align: center;    /* Center text and elements within the container */
+        }
+
+        input[type="text"], 
+        input[type="email"],
+        input[type="password"] {
+            width: calc(100% - 20px); 
+            height: 20px;
+            padding: 10px;        /* Padding for the input fields */
+            margin-top: 8px;      /* Margin on top for spacing */
+            margin-bottom: 8px;   /* Margin on bottom for spacing */
+            border: 1px solid #595a5a; /* Border for the inputs */
+            font-family: 'Montserrat', sans-serif; 
+            font-weight: 500;
+            text-indent: 8px;
+        }
+        input[type="text"]::placeholder,
+        input[type="email"]::placeholder,
+        input[type="password"]::placeholder {
+            color: #595a5a; /* Placeholder text color */
+            font-size: 16px; /* Placeholder text size */
+            font-family: 'Montserrat', sans-serif;
+            text-indent: 8px;
+        }
+
+        input[type="submit"] {
+            width: 30%;          /* Make submit button fill the container */
+            padding: 10px;        /* Padding for the button */
+            background-color: #231f20; /* Bootstrap primary color */
+            color: white;         /* Text color for the button */
+            border: none;         /* No border for the button */
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            cursor: pointer;      /* Pointer cursor on hover */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #595a5a; /* Darker shade on hover */
+        }
+
+        .link {
+            display: block;       /* Make links block elements to occupy their own lines */
+            margin-top: 10px;     /* Margin top for spacing */
+            color: #007BFF;       /* Link color matching the button */
+            text-decoration: none; /* No underline */
+        }
+        .forgot-password {
+            text-align: right; /* Align the link to the right */
+        }
+        .forgot-password a {
+            text-decoration: none; /* Remove underline from the hyperlink */
+            color: #595a5a; /* Set link color */
+        }
+        .create-account a {
+            text-decoration: none; /* Remove underline from the hyperlink */
+            color: #231f20; /* Set link color */
+        }
+        .create-account a:hover {
+            text-decoration: none; /* Remove underline from the hyperlink */
+            color: #595a5a; /* Set link color */
+        }
+        .error {
+            color: red;
+        }
+        

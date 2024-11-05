@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product | Admin</title>
+    <link rel="stylesheet" type="text/css" href="adminstyles.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <div class="logo-container">
+        <img src="images\classic.png" alt="Logo">
+    </div>
+    <a href="adminpage.php" class="active">Home</a>
+    <a href="usertables.php">Users</a>
+    <a href="Aproductadd.php">Products</a>
+    <a href="orderstable.php">Orders</a>
+    <a href="#">Admin Account</a>
+    <div class="logout-container">
+        <a href="loginform.php">Log out</a>
+    </div>
+</div>
+
+<div class="content">
+<h2>Add New Product</h2>
+<form action="Aproductadd.php" method="post" enctype="multipart/form-data">
+    <label for="prodName">Product Name:</label>
+    <input type="text" id="prodName" name="prodName" required>
+
+    <label for="prodDesc">Product Description:</label>
+    <textarea id="prodDesc" name="prodDesc" required></textarea>
+
+    <label for="prodPrice">Product Price:</label>
+    <input type="text" id="prodPrice" name="prodPrice" required>
+
+    <label for="prodAvailability">Availability:</label>
+    <input type="text" id="prodAvailability" name="prodAvailability" required>
+    <label for="prodSpec">Product Specifications:</label>
+    <textarea id="prodSpec" name="prodSpec" required></textarea>
+
+    <label for="prodImage">Product Image:</label>
+    <input type="file" id="prodImage" name="prodImage" accept="image/*" required>
+
+    <label for="prodSize">Product Size:</label>
+    <select id="prodSize" name="prodSize" required>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+    </select>
+
+    <label for="prodColor">Product Color:</label>
+    <select id="prodColor" name="prodColor" required>
+        <option value="Black">Black</option>
+        <option value="White">White</option>
+    </select>
+    
+
+    <input type="submit" value="Add Product">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var message = "<?php echo $message; ?>";
+            if (message) {
+                var modal = document.getElementById("myModal");
+                var span = document.getElementsByClassName("close")[0];
+                var modalMessage = document.getElementById("modalMessage");
+        
+                modalMessage.textContent = message;
+                modal.style.display = "block";
+        
+                span.onclick = function() {
+                    modal.style.display = "none";
+                    window.location.href = 'Aproductadd.php';
+                }
+        
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                        window.location.href = 'Aproductadd.php';
+                    }
+                }
+            }
+        });
+        </script>
+</form>
+</div>
+</body>
+</html>

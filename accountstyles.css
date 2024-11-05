@@ -1,0 +1,289 @@
+body {
+    font-family: 'Montserrat', 'Montserrat';
+    font-size: large;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f9;
+    color: #231f20;
+    line-height: 1.6;
+}
+.divider {
+    background-color: #f4f4f9;
+    height: 30px; /* Adjust the height of the divider as needed */
+    margin-top: 20px;
+}
+.divider1 {
+    margin-top: 30px;
+    background-color:#231f20;
+    height: 10px;
+}
+.container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.logo {
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 15%;
+    height: auto;
+}
+
+.navbar {
+    margin-top: 30px;
+    margin-left: 80px; /* Add margin to create space between logo and list */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox for the list */
+}
+
+.navbar li {
+    margin-right: 50px;
+}
+
+.navbar li:last-child {
+    margin-right: 0; /* Remove margin from the last list item */
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.navbar li a:hover {
+    color:#231f20;
+    font-weight: 500; /* Make text bold on hover */
+}
+
+.logos {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Align items vertically */
+    margin-left: 500px;
+}
+
+.logos img {
+    width: 25px; /* Decrease the width of the images */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 45px; /* Add some space between the images */
+}
+a:hover img {
+    transform: scale(1.1); /* Increase size on hover */
+}
+
+.container1 {
+    max-width: 800px;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Border between rows */
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+form {
+    margin-top: 20px;
+}
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.upload-form {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Add space between elements */
+}
+
+.profile-header {
+    display: flex;
+    align-items: center; /* Align items vertically center */
+    gap: 20px; /* Add space between the image and the h2 */
+}
+
+.profile-container {
+    text-align: center;
+}
+
+.profile-pic-container {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.upload-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    cursor: pointer;
+}
+
+.profile-pic-container:hover .upload-label {
+    display: block;
+}
+
+.upload-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.file-input {
+    display: none;
+}
+
+.upload-form {
+    margin-top: -20px;
+    margin-left: -165px;
+}
+
+.upload-btn {
+    background-color:#231f20;
+    font-family: 'Montserrat', 'Montserrat'; 
+    border: none; 
+    color: white; 
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.upload-btn:hover {
+    background-color: #0a0808;
+}
+.update-form {
+    max-width: 300px;
+    margin: 10px;
+    padding: 0px;
+}
+
+.update-form label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.update-form input[type="text"],
+.update-form input[type="email"],
+.update-form input[type="password"] {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #c5c5c5;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+.update-form input[type="text"]:hover,
+    .update-form input[type="email"]:hover,
+    .update-form input[type="password"]:hover {
+        border: 1px solid #525252; /* Set initial border */
+        transition: border-width 0.3s; /* Add smooth transition */
+    }
+.update-form input[type="submit"] {
+    background-color: #231f20;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.update-form input[type="submit"]:hover {
+    background-color: black;
+}
+.back-link,
+.edit-link,
+.logout-link,
+.password-link {
+    font-size: 16px;
+    color: black;
+}
+
+.back-link:hover,
+.edit-link:hover,
+.logout-link:hover,
+.password-link:hover {
+    font-weight: 500;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+}
+.profile-pic-container {
+    position: relative;
+    display: inline-block;
+}
+.profile-pic {
+    width: 150px; /* Adjust width */
+    height: 150px; /* Adjust height */
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.camera-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 24px;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, opacity 0.3s ease; /* Add opacity transition */
+    z-index: 1; /* Ensure the icon appears above the profile picture */
+    opacity: 0.5; /* Set initial opacity */
+}
+
+/* Increase opacity on hover */
+.camera-icon:hover {
+    opacity: 1;
+}

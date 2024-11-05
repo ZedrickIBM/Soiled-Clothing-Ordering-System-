@@ -1,0 +1,593 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f9;
+    color: #231f20;
+    line-height: 1.6;
+}
+.divider {
+    background-color: #f4f4f9;
+    height: 30px; /* Adjust the height of the divider as needed */
+    margin-top: 20px;
+}
+.divider1 {
+    margin-top: 30px;
+    background-color:#231f20;
+    height: 10px;
+}
+.container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.logo {
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 15%;
+    height: auto;
+}
+
+.navbar {
+    margin-top: 30px;
+    margin-left: 80px; /* Add margin to create space between logo and list */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox for the list */
+}
+
+.navbar li {
+    margin-right: 50px;
+}
+
+.navbar li:last-child {
+    margin-right: 0; /* Remove margin from the last list item */
+}
+
+.navbar li a,
+        .navbar li .login-button {
+            text-decoration: none;
+            color: #333;
+            background: none; /* Remove any default button background */
+            border: none; /* Remove any default button border */
+            font: inherit; /* Inherit font styles */
+            cursor: pointer; /* Make cursor a pointer */
+            padding: 0; /* Remove default padding */
+        }
+
+        .navbar li a:hover,
+        .navbar li .login-button:hover {
+            color: #231f20;
+            font-weight: 500; /* Make text bold on hover */
+        }
+
+.logos {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Align items vertically */
+    margin-left: 500px;
+}
+
+.logos img {
+    width: 25px; /* Decrease the width of the images */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 45px; /* Add some space between the images */
+}
+a:hover img {
+    transform: scale(1.1); /* Increase size on hover */
+}
+.slideshow-container {
+    position: relative;
+    max-width: 2000px;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.fade {
+    animation: fade 5s infinite; /* Change the animation duration as needed */
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+.about{
+    width: 1200px;
+}
+.about h1,
+.about h2 {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.about p{
+    margin-left: 80px;
+}
+.about li{
+    margin-left: 55px;
+}
+.stories-panel {
+    margin-top: 20px;
+    margin-left: 80px;
+    display: flex;
+    gap: 20px; /* Adds space between the story elements */
+}
+#stories {
+    margin: 30px 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    margin-left: 50px;
+}
+.story1{
+    margin-top: 30px;
+    margin-left: 50px;
+    border: solid;    
+    text-align: center;
+    width: 350px;
+}
+.story1 img{
+    margin-top: 20px;
+}
+.story1 p{
+    margin-left: 20px;
+    margin-right: 30px;
+    text-align: left;
+}
+.footer {
+    margin-top: 100px;
+    background-color: #231f20;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.footer .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px 0;
+}
+
+.footer .footer-section h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer .footer-section p,
+.footer .footer-section ul,
+.footer .footer-section li {
+    margin-left: 45px;
+}
+
+.footer .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .footer-section ul li a:hover {
+    color: #f9a825;
+}
+
+.footer .footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #555;
+    margin-top: 20px;
+}
+.footer-section img{
+width: 20px;
+margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .footer-section {
+        text-align: center;
+    }
+}
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjusted to space between items */
+    margin-top: 50px;
+    margin-left: 100px; /* Reduced margin to fit more items in the row */
+}
+.container2 {
+    margin-top: 50px;
+    margin-left: 100px; /* Reduced margin to fit more items in the row */
+}
+
+.product-container {
+    width: 300px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    /* Removed margin-top */
+}
+.product-container:hover {
+    transform: scale(1.05);
+}
+
+.product {
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.product a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.product h2 {
+    margin: 0 0 10px;
+}
+
+.product p {
+    margin: 0;
+}
+
+.product-image {
+    width: 250px;
+    /* Remove or comment out the hover effect for the image */
+    /* transition: transform 0.2s; */
+}
+
+.product {
+    padding: 20px;
+    text-align: center;
+}
+
+.product a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.product h2 {
+    margin: 0 0 10px;
+}
+.product p {
+    margin: 0;
+}
+.product-image{
+    width: 250px;
+}
+.product-categories ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.product-categories ul li {
+    display: inline;
+    margin-right: 20px; /* Adjust as needed */
+}
+
+.product-categories ul li a {
+    text-decoration: none;
+    color: #333; /* Adjust color as needed */
+    font-weight: 500; /* Adjust font weight as needed */
+}
+
+.product-categories ul li a:hover {
+    color: #231f20; /* Adjust hover color as needed */
+    text-decoration: underline;
+}
+.sorting-dropdown {
+    text-align: left;
+    margin-left: 100px;
+    margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+.sorting-dropdown form {
+    display: inline-block;
+}
+
+.sorting-dropdown label {
+    font-weight: bold;
+    margin-right: 10px; /* Adjust spacing as needed */
+}
+
+.sorting-dropdown select {
+    padding: 5px;
+    font-size: 16px; /* Adjust font size as needed */
+    border: 1px solid #ccc; /* Adjust border color as needed */
+    border-radius: 4px; /* Adjust border radius as needed */
+    outline: none;
+}
+
+.sorting-dropdown select:focus {
+    border-color: #666; /* Adjust focus border color as needed */
+}
+
+.sorting-icons {
+    margin-top: 10px; /* Adjust spacing as needed */
+}
+
+.sorting-icons a img {
+    width: 24px; /* Adjust icon size as needed */
+    height: 24px;
+    margin: 0 10px; /* Adjust spacing as needed */
+    vertical-align: middle;
+}
+.categories-sorting-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+.product-details {
+    display: flex; /* Use flexbox */
+    align-items: flex-start; /* Align items at the start of the cross axis */
+    justify-content: space-between; /* Add space between items */
+    padding: 20px; /* Add padding for spacing */
+    margin-left: 120px;
+}
+
+.product-details img {
+    max-width: 100%; /* Set the maximum width of the image to 100% of its container */
+    height: auto;
+    max-height: 300px; /* Optionally, set a maximum height for the image */
+    margin-right: 20px;
+   
+}
+
+.product-details .product-info {
+    flex: 1; /* Allow the product info to grow and shrink as needed */
+}
+.back-to-shop {
+    margin-top: 20px;
+    margin-left: 120px;
+}
+
+.back-to-shop a {
+    font-size: 18px;
+    color: #333;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.back-to-shop a:hover {
+    color:#231f20;
+    font-weight: 500;
+}
+.empty-cart-message {
+    margin-top: 150px;
+    font-size: 18px;
+   margin-right: 700px;
+}
+.product-container1 {
+    width: 300px; /* Set a fixed width */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px; /* Adjust margin-bottom for closer spacing */
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Light gray background */
+    box-sizing: border-box; /* Include padding and border in the specified width */
+    margin-right: 1000px;
+    justify-content: center;
+}
+
+/* CSS for remove button */
+.product-info form {
+    margin-top: 10px;
+}
+
+.product-info button {
+    font-family: montserrat;
+    background-color: #dc3545; /* Red background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.product-info button:hover {
+    background-color: #c82333; /* Darker red background on hover */
+}
+.buy-button {
+    margin-top: 20px; /* Add some top margin */
+    margin-left: 100px;
+}
+
+.buy-button button {
+    font-family: montserrat;
+    background-color: #333; /* Blue background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.buy-button button:hover {
+    background-color: #231f20; /* Darker blue background on hover */
+}
+.subtotal {
+    margin-top: 10px;
+    font-weight: bold;
+}
+/* Modal styles */
+.modal-right form {
+    margin-top: 20px; /* Adjust this value as needed */
+}
+
+.modal-right h2 {
+    margin-top: 0; /* Remove default margin for the heading */
+}
+.modal {
+    display: none; /* Initially hidden */
+    position: fixed; /* Stay in place when scrolling */
+    z-index: 1; /* Sit on top of other content */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Transparent black background */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    display: flex; /* Use flexbox for side-by-side layout */
+    text-align: center;
+    position: relative;
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and bottom, centered horizontally */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Adjust width as needed */
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal-left,
+  .modal-right {
+    flex: 1; /* Make both sides equally sized */
+  }
+  
+  .modal-left {
+    text-align: center; /* Center the image horizontally */
+  }
+  
+  .modal-left img {
+    width: 100%; /* Adjust image width as needed */
+    max-width: 300px; /* Set a maximum width for responsiveness */
+  }
+  
+  .modal-right {
+    padding: 20px; /* Add some padding to login content */
+  }
+  
+  /* Animation (optional) */
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    height: 20px;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #595a5a;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-indent: 8px;
+}
+input[type="text"],
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+    color: #595a5a;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    text-indent: 8px;
+}
+
+
+input[type="submit"] {
+    width: 30%;
+    padding: 10px;
+    background-color: #231f20;
+    color: white;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #595a5a;
+}
+
+.link {
+    display: block;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.forgot-password {
+    text-align: right;
+    font-weight: 500;
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: #595a5a;
+}
+
+.create-account a {
+    text-decoration: none;
+    color: #595a5a;
+}
+.close {
+    float: right; /* Float the close button to the right */
+    padding: 15px 25px; /* Add some padding for spacing */
+    margin-top: -40px; /* Adjust margin-top to position within content */
+    margin-right: -25px; /* Adjust margin-right to position at the edge */
+    font-size: 30px; /* Adjust font size as needed */
+    font-weight: bold; /* Make the close button more prominent */
+    cursor: pointer; /* Change cursor to indicate clickability */
+    color: #000; /* Black color */
+    opacity: 0.5; /* Semi-transparent initially */
+  }
+  
+  .close:hover {
+    opacity: 1; /* Full opacity on hover */
+  }
+  .loc {
+    margin-left: 50px;
+    font-weight: 600;
+    display: inline-block; /* Allows padding and margin */
+    padding: 10px 15px; /* Adds space inside the link */
+    font-size: 16px; /* Sets the font size */
+    color: white; /* Text color */
+    background-color: #231f20; /* Background color */
+    border-radius: 5px; /* Rounds the corners */
+    text-decoration: none; /* Removes underline */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect */
+.loc:hover {
+    background-color: #595a5a; /* Background color */
+    transform: scale(1.1); /* Increases the size by 10% */
+}

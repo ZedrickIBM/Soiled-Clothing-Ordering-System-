@@ -1,0 +1,308 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f9;
+    color: #231f20;
+    line-height: 1.6;
+   
+}
+table {
+    border-collapse: collapse;
+    width: 90%; /* Adjust the width as needed */
+    max-width: 100%; /* Ensure the table does not exceed the content width */
+    height: 100%;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+.sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px; /* Optional: Add some spacing between logo and other links */
+}
+
+.sidebar a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+}
+
+.sidebar img {
+    width: 120px;
+}
+
+.content {
+    margin-left: 220px;
+    padding: 20px;
+    overflow-x: auto; /* Add horizontal scroll if needed */
+    max-width: calc(100% - 240px); /* Adjust according to your sidebar width */
+}
+
+.content table {
+    max-width: 100%; /* Ensure the table does not exceed the content width */
+}
+
+
+/* Style for the active menu item */
+.active {
+    background-color: #555;
+}
+.table-container {
+    overflow-x: auto; /* Add horizontal scroll if needed */
+    max-width: 100%; /* Ensure the table does not exceed the content width */
+}
+
+.logout-container {
+    margin-top: auto;
+    padding: 50px;
+}
+
+.logout-container a {
+    color: white;
+}
+
+.logout-container a:hover {
+    background-color: #555;
+}
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #231f20;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.pagination a:hover {
+    background-color: black;
+}
+
+.pagination span {
+    display: inline-block;
+    cursor: default;
+}
+
+.container1 {
+    max-width: 800px;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.profile-pic-container {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.upload-form {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+
+.upload-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    cursor: pointer;
+}
+
+.profile-pic-container:hover .upload-label {
+    display: block;
+}
+
+.upload-btn {
+    background-color: #231f20;
+    font-family: 'Montserrat', 'Montserrat'; 
+    border: none; 
+    color: white; 
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.upload-btn:hover {
+    background-color: #0a0808;
+}
+
+.update-form {
+    max-width: 300px;
+    margin: 10px;
+    padding: 0px;
+}
+
+.update-form label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.update-form input[type="text"],
+.update-form input[type="email"],
+.update-form input[type="password"] {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #c5c5c5;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.update-form input[type="text"]:hover,
+.update-form input[type="email"]:hover,
+.update-form input[type="password"]:hover {
+    border: 1px solid #525252;
+    transition: border-width 0.3s;
+}
+
+.update-form input[type="submit"] {
+    background-color: #231f20;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.update-form input[type="submit"]:hover {
+    background-color: black;
+}
+
+.back-link,
+.edit-link,
+.logout-link,
+.password-link {
+    font-size: 16px;
+    color: black;
+}
+
+.back-link:hover,
+.edit-link:hover,
+.logout-link:hover,
+.password-link:hover {
+    font-weight: 500;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+}
+.profile-pic {
+    width: 100px; /* Adjust width */
+    height: 100px; /* Adjust height */
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.camera-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 24px;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, opacity 0.3s ease; /* Add opacity transition */
+    z-index: 1; /* Ensure the icon appears above the profile picture */
+    opacity: 0.5; /* Set initial opacity */
+}
+
+/* Increase opacity on hover */
+.camera-icon:hover {
+    opacity: 1;
+}
+/* Style for select element */
+select {
+    /* Reset default styles */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* Add custom styles */
+    padding: 8px 24px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 4px; /* Border radius */
+    background-color: #fff; /* Background color */
+    color: #333; /* Text color */
+    cursor: pointer; /* Show pointer cursor */
+    background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23666" viewBox="0 0 24 24"%3E%3Cpath d="M7 10l5 5 5-5z"%3E%3C/path%3E%3C/svg%3E'); /* Default arrow icon */
+    background-repeat: no-repeat;
+    background-position: right 8px center; /* Position the arrow */
+  }
+  
+  /* Style for select when hovered */
+  select:hover {
+    border-color: #aaa; /* Border color on hover */
+  }
+  
+  /* Style for select when focused */
+  select:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #007bff; /* Border color on focus */
+  }
+  
+  /* Style for select options */
+  select option {
+    background-color: #fff; /* Background color for options */
+    color: #333; /* Text color for options */
+  }
+  

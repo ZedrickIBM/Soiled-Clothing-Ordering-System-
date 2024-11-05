@@ -1,0 +1,133 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f9;
+    color: #231f20;
+    line-height: 1.6;
+}
+.divider {
+    background-color: #f4f4f9;
+    height: 30px; /* Adjust the height of the divider as needed */
+    margin-top: 20px;
+}
+.divider1 {
+    margin-top: 30px;
+    background-color:#231f20;
+    height: 10px;
+}
+.container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.logo {
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 15%;
+    height: auto;
+}
+
+.navbar {
+    margin-top: 30px;
+    margin-left: 80px; /* Add margin to create space between logo and list */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox for the list */
+}
+
+.navbar li {
+    margin-right: 50px;
+}
+
+.navbar li:last-child {
+    margin-right: 0; /* Remove margin from the last list item */
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.navbar li a:hover {
+    color:#231f20;
+    font-weight: 500; /* Make text bold on hover */
+}
+
+.logos {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Align items vertically */
+    margin-left: 500px;
+}
+
+.logos img {
+    width: 25px; /* Decrease the width of the images */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 45px; /* Add some space between the images */
+}
+a:hover img {
+    transform: scale(1.1); /* Increase size on hover */
+}
+
+.container1 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd; /* Border for the entire table */
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Border between rows */
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="submit"] {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.upload-form {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
